@@ -3,6 +3,10 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Input } from "../ui/input";
 import { UserNav } from "./user-nav";
+import { ThemeSheet } from "../theme-sheet";
+import { ModeToggle } from "../mode-toggle";
+import { LangToggle } from "../lang-toggle";
+
 
 export const MainNav = () => {
   return (
@@ -42,6 +46,9 @@ export const MainNav = () => {
               className="md:w-[100px] lg:w-[300px]"
             />
           </div>
+          <ThemeSheet  />
+          <ModeToggle />
+          <LangToggle />
           <UserNav />
         </div>
       </div>
